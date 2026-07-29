@@ -1,9 +1,9 @@
 window.CALENDAR_WIDGET_CONFIG = {
   // Paste the Calendar ID from Google Calendar > Settings > Integrate calendar.
-  googleCalendarId: "PASTE_YOUR_GOOGLE_CALENDAR_ID_HERE",
+  googleCalendarId: c_7e13b358b5556e04566b4552468a2a0e769a27fc9622b390c94bcaa2b248bccc@group.calendar.google.com,
 
   // Paste the restricted Google API key from Google Cloud Console.
-  googleApiKey: "PASTE_YOUR_RESTRICTED_GOOGLE_API_KEY_HERE",
+  googleApiKey: "AIzaSyBvzNlRGl7Sc0GZLsrcg5egQCmaBNXWcZw,
 
   // Use an IANA time zone name. Watsonville is America/Los_Angeles.
   timeZone: "America/Los_Angeles",
