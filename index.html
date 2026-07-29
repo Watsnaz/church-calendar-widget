@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Events Calendar</title>
+
+  <!-- FullCalendar 7 standard bundle and theme, following FullCalendar's script-tag setup. -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/all/global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/themes/monarch/global.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/skeleton.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@7.0.0/themes/monarch/theme.css">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="calendar-shell">
+    <header class="calendar-heading">
+      <div>
+        <p class="eyebrow">What’s happening</p>
+        <h1 id="calendar-title">Upcoming Events</h1>
+      </div>
+      <p class="calendar-intro">Select an event to see its full details.</p>
+    </header>
+
+    <div id="status" class="status" role="status" aria-live="polite">Loading events…</div>
+    <nav id="category-filters" class="category-filters" aria-label="Filter events by category"></nav>
+    <div id="calendar" aria-label="Events calendar"></div>
+  </main>
+
+  <dialog id="event-dialog" class="event-dialog" aria-labelledby="dialog-title">
+    <article class="dialog-card">
+      <button id="dialog-close" class="dialog-close" type="button" aria-label="Close event details">×</button>
+      <img id="dialog-image" class="dialog-image" alt="" hidden>
+      <div class="dialog-content">
+        <p id="dialog-category" class="dialog-category" hidden></p>
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-date" class="dialog-date"></p>
+        <p id="dialog-location" class="dialog-location" hidden></p>
+        <p id="dialog-description" class="dialog-description" hidden></p>
+        <div class="dialog-actions">
+          <a id="dialog-primary-link" class="button button-primary" target="_blank" rel="noopener noreferrer" hidden></a>
+          <a id="dialog-directions-link" class="button button-secondary" target="_blank" rel="noopener noreferrer" hidden>Get directions</a>
+          <a id="dialog-calendar-link" class="button button-secondary" target="_blank" rel="noopener noreferrer" hidden>Open in Google Calendar</a>
+        </div>
+      </div>
+    </article>
+  </dialog>
+
+  <noscript>This calendar requires JavaScript.</noscript>
+</body>
+</html>
