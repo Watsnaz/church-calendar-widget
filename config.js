@@ -8,7 +8,7 @@ window.CALENDAR_WIDGET_CONFIG = {
   // Use an IANA time zone name. Watsonville is America/Los_Angeles.
   timeZone: "America/Los_Angeles",
 
-  calendarTitle: "Upcoming Events",
+  calendarTitle: "WatsNaz Calendar",
 
   // Category names are read from CATEGORY: in each event description.
   categoryColors: {
